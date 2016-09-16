@@ -1,0 +1,19 @@
+{
+	"name": "sortingservice",
+	"description": "Sorting Service Module.",
+	"keywords": ["sorting", "service"],
+	"authors": [
+		{
+			"name": "Adonai Cruz",
+			"email": "adonai.cruz@gmail.com"
+		}
+	],
+	"require": {
+	     "php": ">=5.3"
+	},
+	"autoload": {
+		"classmap": [
+		     "lib/sorting_service.php"
+		]
+	}
+}
