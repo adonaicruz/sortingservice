@@ -13,7 +13,7 @@
 	},
 	"autoload": {
 		"classmap": [
-		     "lib/sorting_service.php"
+		     "lib/SortingService.php"
 		]
 	}
 }
