@@ -10,6 +10,7 @@ Just a Simple Sorting Service
 ### By downloading
 1. Clone/download this repository
 2. Copy `lib/SortingService.php` to your project's desired folder.
+
 ### Requires
 * php 5.3+
 
