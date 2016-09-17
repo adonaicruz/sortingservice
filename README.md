@@ -2,7 +2,9 @@
 Just a Simple Sorting Service
 
 ## How it works
-The 
+1. The Client sends a set of Books to be sorted by the SortingService
+2. The Sorting Service sorts the set of Books.
+3. The Sorting Service returns the sorted set of Books to the SSC.
 
 ## Installation
 ### By downloading
