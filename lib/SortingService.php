@@ -17,7 +17,6 @@ class SortingService {
      * Create instance and load data
      *
      * @param null|json|array   $data   Table data to be sorted
-     *
      * @return SS
      * @throws Exception
      *
@@ -113,7 +112,7 @@ class SortingService {
     /**
      * Helper to check the data order. Compare 2 rows [a,b] and check the position
      *
-     * @return array
+     * @return int
      *
      */
 	protected function check($a, $b){
