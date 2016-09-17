@@ -23,6 +23,8 @@
 			//sorts the data according to the specified parameters
 			$ss->sort($sorter);
 
+			print_r($ss->getId());
+
 			$vDataSorted = $ss->getData();
 		}
 		

@@ -78,6 +78,19 @@ class SortingService {
     public function getHeader() {
     	return $this->header;
     }
+    /**
+     * Get table id
+     *
+     * @return array
+     *
+     */
+    public function getId() {
+    	$vId = array();
+    	foreach($this->data as $data):
+    		$vId[] = $data[0];
+    	endforeach;
+    	return $vId;
+    }
 
     /**
      * Method to Sort Array
@@ -86,9 +99,14 @@ class SortingService {
      * @return array
      *
      */
-    public function sort(array $sort) {
-    	$this->sort = $sort;
-    	usort($this->data, array($this, 'check'));
+    public function sort($sort) {
+    	if($sort === null){
+    		throw new Exception('Sort param must be an array.');
+    	}
+    	if(is_array($sort)){
+	    	$this->sort = $sort;
+	    	usort($this->data, array($this, 'check'));
+    	}
     	return $this->data;
     }
 
